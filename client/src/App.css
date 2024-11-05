@@ -1,0 +1,7 @@
+:root {
+    --light: #3d3f46;
+    --clr: #222327;
+    --main: #18b2b8;
+    --main-fade: #18b3b8c2;
+    background-color:  var(--clr);
+}
