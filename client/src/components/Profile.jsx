@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './Styles/ProfileStyle.css';
 import 'boxicons';
 import { getCurrentUser, signOut, deleteUser, fetchUserAttributes } from 'aws-amplify/auth';
+import { Storage } from '@aws-amplify/storage'
 
 const useRenderLogger = (componentName) => {
   useEffect(() => {
@@ -63,7 +64,7 @@ function Profile({ onNavigate }) {
     event.preventDefault();
     try {
       const fullName = `${firstName} ${lastName}`; 
-      const user = await Auth.currentAuthenticatedUser();
+      const user = await getCurrentUser();
       const attributes = { name: fullName };
 
       // If a new profile image is selected, upload it
