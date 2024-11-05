@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Styles/ProfileStyle.css';
 import 'boxicons';
 import { getCurrentUser, signOut, deleteUser, fetchUserAttributes } from 'aws-amplify/auth';
-import { Storage } from '@aws-amplify/storage'
+//import { Storage } from '@aws-amplify/storage'
 
 const useRenderLogger = (componentName) => {
   useEffect(() => {
@@ -68,14 +68,14 @@ function Profile({ onNavigate }) {
       const attributes = { name: fullName };
 
       // If a new profile image is selected, upload it
-      if (newProfileImage) {
+      /*if (newProfileImage) {
         const result = await Storage.put(`profile-pictures/${newProfileImage.name}`, newProfileImage, {
           contentType: newProfileImage.type,
         });
         const pictureUrl = `https://amplify-petconnect-dev-d1727-deployment.s3.amazonaws.com/${result.key}`;
         attributes.picture = pictureUrl;
         setProfilePicture(pictureUrl);
-      }
+      }*/
 
       await Auth.updateUserAttributes(user, attributes);
       alert('Profile updated successfully!');
