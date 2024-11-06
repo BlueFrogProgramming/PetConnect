@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 import './App.css'
 
-import '@aws-amplify/ui-react/styles.css';
 import ConfigureAmplifyClientSide from './ConfigureAmplify';
 
 import Login from './components/Login'
