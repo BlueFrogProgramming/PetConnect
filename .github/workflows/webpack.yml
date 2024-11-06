@@ -24,4 +24,5 @@ jobs:
 
     - name: Build
       run: |
+        cd client
         npm run dev
