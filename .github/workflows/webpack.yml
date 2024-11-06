@@ -26,4 +26,5 @@ jobs:
       run: |
         cd client
         npm install
+        npm install boxicons
         npm run build
