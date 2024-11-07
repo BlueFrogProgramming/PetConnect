@@ -29,4 +29,4 @@ jobs:
         npm install boxicons
         npm install react-big-calendar
         npm install react-datepicker
-        npm run dev
+        npm run build
