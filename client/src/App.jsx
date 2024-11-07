@@ -14,7 +14,7 @@ import Register from './components/Register'
 import Profile from './components/Profile'
 
 import { Amplify } from "aws-amplify";
-import config from "./amplifyconfiguration.json";
+import config from "./AmplifyConfiguration.json";
 
 Amplify.configure(config, { ssr: true });
 
