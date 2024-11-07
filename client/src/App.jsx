@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import './App.css'
 
-import ConfigureAmplifyClientSide from './ConfigureAmplify';
+import ConfigureAmplifyClientSide from '/ConfigureAmplify';
 
 import Login from './components/Login'
 import Calendar from './components/Calendar'
