@@ -130,6 +130,7 @@ function Profile({ onNavigate }) {
         <div>
           <p className="email">{email}</p>
         </div>
+        <p>test</p>
       </div>
       <button onClick={logOut} className="logout-button">Logout</button>
       <button onClick={deleteAccount} className="delete-button">Delete Account</button>
