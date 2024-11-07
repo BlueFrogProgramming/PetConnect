@@ -1,27 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-}
-
-body:after{
-    content: "";
-    position: fixed;
-    top: 0;
-    height: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: url(./images/background.png) center center;
-    background-size: cover;
-}
 
 .wrapper {
-    height: auto;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);

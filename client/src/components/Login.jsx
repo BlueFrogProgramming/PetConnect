@@ -79,7 +79,8 @@ function Login({ onNavigate }) {
         <button type="submit" className="submit-button">Login</button>
       </form>
       <p className="error">{message}</p>
-      <button onClick={() => onNavigate("register")}>Register</button>
+      <p class="change-page-text">Don't have an account? </p>
+      <button onClick={() => onNavigate("register")} class="change-page">Register</button>
     </div>
   );
 }
