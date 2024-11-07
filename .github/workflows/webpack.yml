@@ -25,6 +25,7 @@ jobs:
     - name: Build
       run: |
         cd client
-        node install
+        npm install
         npm install boxicons
+        npm install react-big-calendar
         npm run build
