@@ -22,11 +22,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Builds
       run: |
         cd client
         npm install
         npm install boxicons
         npm install react-big-calendar
         npm install react-datepicker
-        npm run build
+        npm run dev
