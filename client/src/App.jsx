@@ -4,8 +4,7 @@ import { useState } from 'react'
 
 import './App.css'
 
-import '@aws-amplify/ui-react/styles.css';
-import ConfigureAmplifyClientSide from './ConfigureAmplify';
+
 
 import Login from './components/Login'
 import Calendar from './components/Calendar'
@@ -13,6 +12,11 @@ import Home from './components/Home'
 import Menu from './components/Menu'
 import Register from './components/Register'
 import Profile from './components/Profile'
+
+import { Amplify } from "aws-amplify";
+import config from "./amplifyconfiguration.json";
+
+Amplify.configure(config, { ssr: true });
 
 export function App() {
 
