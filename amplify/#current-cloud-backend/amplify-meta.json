@@ -1,0 +1,205 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-petconnect-dev-d1727-authRole",
+      "UnauthRoleArn": "arn:aws:iam::703671893430:role/amplify-petconnect-dev-d1727-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::703671893430:role/amplify-petconnect-dev-d1727-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-petconnect-dev-d1727-deployment",
+      "UnauthRoleName": "amplify-petconnect-dev-d1727-unauthRole",
+      "StackName": "amplify-petconnect-dev-d1727",
+      "StackId": "arn:aws:cloudformation:eu-west-2:703671893430:stack/amplify-petconnect-dev-d1727/32b848c0-9931-11ef-9eae-067aeb5f4cc5",
+      "AmplifyAppId": "d1gxgxgjtpuu7o",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    }
+  },
+  "function": {
+    "petconnect9da959fdDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-11-02T15:48:28.196Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-11-02T15:48:28.258Z",
+      "distZipFilename": "petconnect9da959fdDefineAuthChallenge-78746f39566639636945-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-petconnect-dev-d1727-deployment",
+        "s3Key": "amplify-builds/petconnect9da959fdDefineAuthChallenge-78746f39566639636945-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/function/petconnect9da959fdDefineAuthChallenge-cloudformation-template.json",
+        "logicalId": "functionpetconnect9da959fdDefineAuthChallenge"
+      },
+      "lastPushTimeStamp": "2024-11-02T15:51:09.631Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::703671893430:role/petconnect9da959fdDefineAuthChallenge-dev",
+        "Region": "eu-west-2",
+        "Arn": "arn:aws:lambda:eu-west-2:703671893430:function:petconnect9da959fdDefineAuthChallenge-dev",
+        "Name": "petconnect9da959fdDefineAuthChallenge-dev",
+        "LambdaExecutionRole": "petconnect9da959fdDefineAuthChallenge-dev"
+      },
+      "lastPushDirHash": "0/Ng60IINBRV6uZvKx1op34Txzg="
+    },
+    "petconnect9da959fdCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-11-02T15:48:29.346Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-11-02T15:48:29.387Z",
+      "distZipFilename": "petconnect9da959fdCreateAuthChallenge-574d6358495646776b6c-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-petconnect-dev-d1727-deployment",
+        "s3Key": "amplify-builds/petconnect9da959fdCreateAuthChallenge-574d6358495646776b6c-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/function/petconnect9da959fdCreateAuthChallenge-cloudformation-template.json",
+        "logicalId": "functionpetconnect9da959fdCreateAuthChallenge"
+      },
+      "lastPushTimeStamp": "2024-11-02T15:51:09.631Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::703671893430:role/petconnect9da959fdCreateAuthChallenge-dev",
+        "Region": "eu-west-2",
+        "Arn": "arn:aws:lambda:eu-west-2:703671893430:function:petconnect9da959fdCreateAuthChallenge-dev",
+        "Name": "petconnect9da959fdCreateAuthChallenge-dev",
+        "LambdaExecutionRole": "petconnect9da959fdCreateAuthChallenge-dev"
+      },
+      "lastPushDirHash": "92dwqPwkjkuWHH34wF8Pa/vjc1c="
+    },
+    "petconnect9da959fdVerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-11-02T15:48:31.327Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-11-02T15:48:34.177Z",
+      "distZipFilename": "petconnect9da959fdVerifyAuthChallengeResponse-765969334d5149306b6e-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-petconnect-dev-d1727-deployment",
+        "s3Key": "amplify-builds/petconnect9da959fdVerifyAuthChallengeResponse-765969334d5149306b6e-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/function/petconnect9da959fdVerifyAuthChallengeResponse-cloudformation-template.json",
+        "logicalId": "functionpetconnect9da959fdVerifyAuthChallengeResponse"
+      },
+      "lastPushTimeStamp": "2024-11-02T15:51:09.631Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::703671893430:role/petconnect9da959fdVerifyAuthChallengeResponse-dev",
+        "Region": "eu-west-2",
+        "Arn": "arn:aws:lambda:eu-west-2:703671893430:function:petconnect9da959fdVerifyAuthChallengeResponse-dev",
+        "Name": "petconnect9da959fdVerifyAuthChallengeResponse-dev",
+        "LambdaExecutionRole": "petconnect9da959fdVerifyAuthChallengeResponse-dev"
+      },
+      "lastPushDirHash": "t8n++SaVXcM74WDuDkgLX9QDgLM="
+    },
+    "petconnect9da959fdCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-11-02T15:48:35.448Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-11-02T15:48:35.481Z",
+      "distZipFilename": "petconnect9da959fdCustomMessage-416233566b4e4b6d5933-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-petconnect-dev-d1727-deployment",
+        "s3Key": "amplify-builds/petconnect9da959fdCustomMessage-416233566b4e4b6d5933-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/function/petconnect9da959fdCustomMessage-cloudformation-template.json",
+        "logicalId": "functionpetconnect9da959fdCustomMessage"
+      },
+      "lastPushTimeStamp": "2024-11-02T15:51:09.631Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::703671893430:role/petconnect9da959fdCustomMessage-dev",
+        "Region": "eu-west-2",
+        "Arn": "arn:aws:lambda:eu-west-2:703671893430:function:petconnect9da959fdCustomMessage-dev",
+        "Name": "petconnect9da959fdCustomMessage-dev",
+        "LambdaExecutionRole": "petconnect9da959fdCustomMessage-dev"
+      },
+      "lastPushDirHash": "iK5mKB8EbV/AUqafN1lZc3q86YI="
+    }
+  },
+  "auth": {
+    "petconnect9da959fd": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "petconnect9da959fdDefineAuthChallenge",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "petconnect9da959fdCreateAuthChallenge",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "petconnect9da959fdVerifyAuthChallengeResponse",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "petconnect9da959fdCustomMessage",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": true,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "NAME",
+          "PICTURE"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-petconnect-dev-d1727-deployment/amplify-cfn-templates/auth/petconnect9da959fd-cloudformation-template.json",
+        "logicalId": "authpetconnect9da959fd"
+      },
+      "lastPushTimeStamp": "2024-11-02T15:51:09.631Z",
+      "output": {
+        "UserPoolId": "eu-west-2_kUrch7dz8",
+        "AppClientIDWeb": "d2mmk7bdoop64u73u6rit85qi",
+        "AppClientID": "77kf910gp68hprkeki3co8q393",
+        "IdentityPoolId": "eu-west-2:74a9cb57-283b-40dd-b314-68ddfb5245c1",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:703671893430:userpool/eu-west-2_kUrch7dz8",
+        "IdentityPoolName": "petconnect9da959fd_identitypool_9da959fd__dev",
+        "UserPoolName": "petconnect9da959fd_userpool_9da959fd"
+      },
+      "lastPushDirHash": "yEhy0KiWWlTbgh9nmM5GUisy/+8="
+    }
+  }
+}
