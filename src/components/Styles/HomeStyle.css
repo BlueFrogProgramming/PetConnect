@@ -1,0 +1,45 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    padding: 30px;
+}
+
+.reminders {
+    width: 20rem;
+    margin: auto;
+}
+
+.reminder {
+    background-color: var(--light);
+    width: 100%;
+    padding: 7px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.reminders h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.first {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.middle {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.last {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
