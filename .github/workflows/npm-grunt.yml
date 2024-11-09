@@ -27,5 +27,5 @@ jobs:
         npm install
         npm install react-big-calendar --save
         npm install react-datepicker --save
-
+        npm install -g grunt-cli
         grunt
