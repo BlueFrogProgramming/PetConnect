@@ -49,61 +49,67 @@ function Register({ onNavigate }) {
 
   return (
     <>
-      <div className="wrapper">
-        <h1>Register</h1>
-        <form onSubmit={handleRegister}>
-          <div className="input-box">
-            <input
-              type='text'
-              placeholder="First Name"
-              name="firstName"
-              value={registerData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-box">
-            <input
-              type='text'
-              placeholder="Last Name"
-              name="lastName"
-              value={registerData.lastName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-box">
-            <input
-              type='email'
-              placeholder="Email"
-              name="email"
-              value={registerData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-box">
-            <input
-              type={passwordVisible ? 'text' : 'password'}
-              placeholder="Password"
-              name="password"
-              value={registerData.password}
-              onChange={handleChange}
-              required
-            />
-            <button type="button" onClick={togglePasswordVisibility}>
-              {passwordVisible ? (
-                <box-icon name='show' color="rgba(255, 255, 255, 0.5)"></box-icon>
-              ) : (
-                <box-icon name='hide' color="rgba(255, 255, 255, 0.5)"></box-icon>
-              )}
-            </button>
-          </div>
-          <button type='submit' className="submit-button">Register</button>
-        </form>
-        <p className="error">{message}</p>
-        <p className="change-page-text">Already have an account? </p>
-        <button onClick={() => onNavigate('login')} className="change-page">Login</button>
+      <div className="container">
+        <div className="card">
+          <h1>Register</h1>
+          <form onSubmit={handleRegister}>
+            <div className="form-group">
+              <input
+                id="first-name"
+                type='text'
+                placeholder="First Name"
+                name="firstName"
+                value={registerData.firstName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                id="last-name"
+                type='text'
+                placeholder="Last Name"
+                name="lastName"
+                value={registerData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                id="password"
+                type='email'
+                placeholder="Email"
+                name="email"
+                value={registerData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                id="password"
+                type={passwordVisible ? 'text' : 'password'}
+                placeholder="Password"
+                name="password"
+                value={registerData.password}
+                onChange={handleChange}
+                required
+              />
+              <button type="button" onClick={togglePasswordVisibility} className="icon-button">
+                {passwordVisible ? (
+                  <box-icon name='show' color="rgba(255, 255, 255, 0.5)"></box-icon>
+                ) : (
+                  <box-icon name='hide' color="rgba(255, 255, 255, 0.5)"></box-icon>
+                )}
+              </button>
+            </div>
+            <button type='submit' className="submit-button">Register</button>
+          </form>
+          <p className="error">{message}</p>
+          <p className="text-center">Already have an account? </p>
+          <button onClick={() => onNavigate('login')} className="change-page">Login</button>
+        </div>
       </div>
     </>
   );
