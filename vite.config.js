@@ -15,6 +15,11 @@ export default defineConfig({
     'global': {},
   },
   optimizeDeps: {
-    include: ['@aws-amplify/auth']
-  }
+    include: ['@aws-amplify/auth'],
+  },
+  server: {
+    host: '0.0.0.0',       // Allow external access on Replit
+    port: process.env.PORT || 5173, // Use Replit's assigned PORT or default to 5173
+  },
 });
+
