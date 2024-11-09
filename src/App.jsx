@@ -27,7 +27,7 @@ export function App() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
 
       {page === "login" && <Login onNavigate={onNavigate} />}
       {page === "register" && <Register onNavigate={onNavigate} />}
