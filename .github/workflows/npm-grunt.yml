@@ -27,5 +27,5 @@ jobs:
         npm install
         npm install react-big-calendar
         npm install react-datepicker
-        nom install boxicons
+        nom install boxicon
         grunt
