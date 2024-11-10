@@ -5,12 +5,13 @@ import { useState } from "react";
 import "./App.css";
 
 import Login from "./components/Login";
-import Calendar from "./components/Calendar";
+import Events from "./components/events-page";
 import Home from "./components/home-page";
-import Menu from "./components/Menu";
+import Menu from "./components/menu";
 import Register from "./components/Register";
-import Profile from "./components/Profile";
 import Alerts from "./components/lost-pet-alerts-page";
+import Feed from "./components/feed-page"
+import Profile from "./components/profile-page"
 
 import { Amplify } from "aws-amplify";
 import config from "./amplifyconfiguration.json";
@@ -33,10 +34,11 @@ export function App() {
         <Menu onNavigate={onNavigate} />
       )}
 
-      {page === "calendar" && <Calendar />}
+      {page === "events" && <Events />}
       {page === "profile" && <Profile onNavigate={onNavigate} />}
       {page === "alerts" && <Alerts />}
       {page === "home" && <Home />}
+      {page === "socials" && <Feed />}
     </div>
   );
 }

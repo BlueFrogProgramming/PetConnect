@@ -16,7 +16,7 @@ export function LostPetAlertsPageComponent() {
         </Button>
       </header>
 
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto pb-[80px]">
         <div className="container mx-auto px-4 py-6 space-y-6">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />

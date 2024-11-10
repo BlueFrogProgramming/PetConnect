@@ -106,6 +106,7 @@ h1 {
   }
 
   body {
+    padding: 0;
     @apply bg-background text-foreground;
   }
 }
