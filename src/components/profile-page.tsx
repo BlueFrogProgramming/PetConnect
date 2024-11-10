@@ -119,8 +119,8 @@ export default function ProfilePage({ onNavigate }) {
   }
 
   return (
-    <div className="w-full h-full min-h-screen bg-gray-900 text-gray-100">
-      <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 w-screen ">
+      <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center w-full">
         <div className="flex items-center">
           <Button variant="ghost" size="icon" className="mr-2" onClick={() => onNavigate('home')}>
             <ChevronLeft className="h-6 w-6" />
@@ -134,8 +134,8 @@ export default function ProfilePage({ onNavigate }) {
         </Button>
       </header>
 
-      <main className="flex-1 overflow-y-auto h-[calc(100vh-64px)]">
-        <div className="container mx-auto px-4 py-6 space-y-6 max-w-2xl">
+      <main className="flex-1 overflow-y-auto pb-16">
+        <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
           <section className="text-center">
             <div className="flex justify-center">
               <div className="relative inline-block">
@@ -180,8 +180,8 @@ export default function ProfilePage({ onNavigate }) {
             <p className="text-gray-400">{email}</p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-4">My Pets</h2>
+          <section className="text-center">
+            <h2 className="text-xl font-semibold my-6">My Pets</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {pets.map((pet) => (
                 <div key={pet.id} className="flex flex-col items-center">

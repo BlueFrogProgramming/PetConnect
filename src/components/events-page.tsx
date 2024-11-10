@@ -37,7 +37,7 @@ export default function EventsPage() {
   const filteredEvents = eventType === 'all' ? events : events.filter(event => event.type === eventType)
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 w-screen">
       <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
           <Button variant="ghost" size="icon" className="mr-2">
@@ -80,10 +80,10 @@ export default function EventsPage() {
         </Dialog>
       </header>
 
-      <main className="flex-1 overflow-y-auto pb-[50px]">
+      <main className="flex-1 overflow-y-auto pb-[70px]">
         <div className="container mx-auto px-4 py-6 space-y-6 max-w-2xl">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="relative flex-grow">
+          <div className="">
+            <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <Input 
                 type="text" 
@@ -92,7 +92,7 @@ export default function EventsPage() {
               />
             </div>
             <Select value={eventType} onValueChange={setEventType}>
-              <SelectTrigger className="bg-gray-800 text-gray-100 border-gray-700 w-full sm:w-[180px]">
+              <SelectTrigger className="bg-gray-800 text-gray-100 border-gray-700 w-full sm:w-[180px] mt-5">
                 <SelectValue placeholder="All Events" />
               </SelectTrigger>
               <SelectContent className="bg-gray-800 text-gray-100 border-gray-700">
@@ -109,7 +109,7 @@ export default function EventsPage() {
               <Card key={event.id} className="bg-gray-800 border-gray-700">
                 <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
-                    <CardTitle className="text-lg font-bold">{event.title}</CardTitle>
+                    <CardTitle className="text-lg font-bold ">{event.title}</CardTitle>
                     <Badge variant="secondary" className="bg-primary text-primary-foreground">
                       {event.type === 'all' ? 'All Pets' : event.type.charAt(0).toUpperCase() + event.type.slice(1)}
                     </Badge>

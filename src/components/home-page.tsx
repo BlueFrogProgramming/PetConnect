@@ -7,7 +7,7 @@ import { Bell, Search, Heart, MessageSquare, ChevronRight } from "lucide-react";
 
 export function HomePageComponent() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 py-100">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
       <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center">
         <h1 className="text-2xl font-bold">PetConnect</h1>
         <Button variant="ghost" size="icon" className="text-gray-100">
@@ -17,8 +17,8 @@ export function HomePageComponent() {
       </header>
 
       <main className="flex-1 overflow-y-auto">
-        <div className="container mx-auto px-4 py-20 space-y-6">
-          <div className="relative">
+        <div className="container mx-auto px-4 pb-20 space-y-6 max-w-2xl">
+          <div className="relative mt-5">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
             <Input
               type="text"
