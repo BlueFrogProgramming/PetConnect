@@ -49,7 +49,7 @@ function Register({ onNavigate }) {
 
   return (
     <>
-      <div className="container">
+      <div className="wrapper">
         <div className="card">
           <h1>Register</h1>
           <form onSubmit={handleRegister}>

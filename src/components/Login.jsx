@@ -46,7 +46,7 @@ function Login({ onNavigate }) {
   };
 
   return (
-    <div className="container">
+    <div className="wrapper">
       <div className="card">
         <h1>Login</h1>
         <form onSubmit={handleLogin}>

@@ -25,12 +25,7 @@ export function App() {
   };
 
   return (
-<<<<<<< HEAD
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-=======
-    <main>
-
->>>>>>> 118e2d8a72f7a3507b3ae95e3d75408ca7f3aa9e
+    <div>
       {page === "login" && <Login onNavigate={onNavigate} />}
       {page === "register" && <Register onNavigate={onNavigate} />}
 
@@ -42,7 +37,7 @@ export function App() {
       {page === "profile" && <Profile onNavigate={onNavigate} />}
       {page === "alerts" && <Alerts />}
       {page === "home" && <Home />}
-    </main>
+    </div>
   );
 }
 

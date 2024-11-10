@@ -1,5 +1,5 @@
 /* Container that holds the entire login card */
-.container {
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;

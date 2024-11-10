@@ -1,13 +1,13 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Bell, Search, Heart, MessageSquare, ChevronRight } from "lucide-react";
 
 export function HomePageComponent() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 py-100">
       <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center">
         <h1 className="text-2xl font-bold">PetConnect</h1>
         <Button variant="ghost" size="icon" className="text-gray-100">
@@ -17,7 +17,7 @@ export function HomePageComponent() {
       </header>
 
       <main className="flex-1 overflow-y-auto">
-        <div className="container mx-auto px-4 py-6 space-y-6">
+        <div className="container mx-auto px-4 py-20 space-y-6">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
             <Input
@@ -32,15 +32,15 @@ export function HomePageComponent() {
             <div className="flex overflow-x-auto space-x-4 pb-4">
               {[1, 2, 3, 4, 5].map((item) => (
                 <div key={item} className="flex-none">
-                  <Avatar className="w-20 h-20">
+                  <Avatar className="w-20 h-20 ">
                     <AvatarImage
                       src={`https://randomuser.me/api/portraits/men/${item}.jpg`}
                       alt={`User ${item}`}
                     />
                     <AvatarFallback>U{item}</AvatarFallback>
                   </Avatar>
-                  <p className="text-center mt-2 font-medium">John D.</p>
-                  <p className="text-center text-sm text-gray-400">
+                  <p className="text-center mt-2 font-medium block">John D.</p>
+                  <p className="text-center text-sm text-gray-400 block">
                     Golden Retriever, 3y
                   </p>
                 </div>
