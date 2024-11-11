@@ -12,6 +12,7 @@ import Register from "./components/Register";
 import Alerts from "./components/lost-pet-alerts-page";
 import Feed from "./components/feed-page"
 import Profile from "./components/profile-page"
+import Settings from "./components/settings-page"
 
 import { Amplify } from "aws-amplify";
 import config from "./amplifyconfiguration.json";
@@ -39,6 +40,7 @@ export function App() {
       {page === "alerts" && <Alerts />}
       {page === "home" && <Home />}
       {page === "socials" && <Feed />}
+      {page === "settings" && <Settings onNavigate={onNavigate} />}
     </div>
   );
 }

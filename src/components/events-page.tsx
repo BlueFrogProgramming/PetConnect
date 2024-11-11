@@ -40,10 +40,6 @@ export default function EventsPage() {
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 w-screen">
       <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center">
         <div className="flex items-center">
-          <Button variant="ghost" size="icon" className="mr-2">
-            <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Back</span>
-          </Button>
           <h1 className="text-2xl font-bold">Events</h1>
         </div>
         <Dialog>
@@ -109,7 +105,7 @@ export default function EventsPage() {
               <Card key={event.id} className="bg-gray-800 border-gray-700">
                 <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
-                    <CardTitle className="text-lg font-bold ">{event.title}</CardTitle>
+                    <CardTitle className="text-lg font-bold text-white">{event.title}</CardTitle>
                     <Badge variant="secondary" className="bg-primary text-primary-foreground">
                       {event.type === 'all' ? 'All Pets' : event.type.charAt(0).toUpperCase() + event.type.slice(1)}
                     </Badge>

@@ -42,10 +42,6 @@ export default function FeedPage() {
         <h1 className="text-2xl font-bold">PetConnect</h1>
         <div className="flex items-center space-x-2">
           <Button variant="ghost" size="icon" className="text-gray-100">
-            <Bell className="h-6 w-6" />
-            <span className="sr-only">Notifications</span>
-          </Button>
-          <Button variant="ghost" size="icon" className="text-gray-100">
             <PlusSquare className="h-6 w-6" />
             <span className="sr-only">New Post</span>
           </Button>

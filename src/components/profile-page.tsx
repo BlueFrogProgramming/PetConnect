@@ -122,13 +122,9 @@ export default function ProfilePage({ onNavigate }) {
     <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 w-screen ">
       <header className="sticky top-0 z-10 bg-gray-800 border-b border-gray-700 px-4 py-2 flex justify-between items-center w-full">
         <div className="flex items-center">
-          <Button variant="ghost" size="icon" className="mr-2" onClick={() => onNavigate('home')}>
-            <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Back</span>
-          </Button>
           <h1 className="text-2xl font-bold">Profile</h1>
         </div>
-        <Button variant="ghost" size="icon" className="text-gray-100">
+        <Button variant="ghost" size="icon" className="text-gray-100" onClick={() => onNavigate("settings")}>
           <Settings className="h-6 w-6" />
           <span className="sr-only">Settings</span>
         </Button>
@@ -208,7 +204,7 @@ export default function ProfilePage({ onNavigate }) {
           </section>
 
           <section>
-            <Card className="bg-gray-800 border-gray-700">
+            <Card className="bg-gray-800 border-gray-700 text-white">
               <CardHeader>
                 <CardTitle>Account Settings</CardTitle>
               </CardHeader>
