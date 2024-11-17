@@ -22,7 +22,7 @@ export function MenuComponent({ onNavigate }: MenuProps) {
   }
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 z-50">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-cyan-200 z-50">
       <ul className="flex justify-around items-center py-2">
         {menuItems.map(({ id, icon: Icon, text }) => (
           <li key={id} className="list">
@@ -33,8 +33,8 @@ export function MenuComponent({ onNavigate }: MenuProps) {
                 handleClick(id)
               }}
               className={`flex flex-col items-center p-2 ${
-                activeItem === id ? 'text-blue-500' : 'text-gray-400'
-              } hover:text-blue-400 transition-colors`}
+                activeItem === id ? 'text-cyan-500' : 'text-cyan-500'
+              } hover:text-cyan-600 transition-colors`}
               aria-current={activeItem === id ? 'page' : undefined}
             >
               <Icon className="h-6 w-6 mb-1" />

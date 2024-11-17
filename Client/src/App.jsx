@@ -13,6 +13,9 @@ import Alerts from "./components/lost-pet-alerts-page";
 import Feed from "./components/feed-page"
 import Profile from "./components/profile-page"
 import Settings from "./components/settings-page"
+import AlertDetails from "./components/lost-pet-details"
+import EventDetails from "./components/event-details"
+import VerifyAccount from "./components/VerifyAccount"
 
 import { Amplify } from "aws-amplify";
 import config from "./amplifyconfiguration.json";
@@ -30,17 +33,20 @@ export function App() {
     <div>
       {page === "login" && <Login onNavigate={onNavigate} />}
       {page === "register" && <Register onNavigate={onNavigate} />}
+      {page === "verify-account" && <VerifyAccount onNavigate={onNavigate} />}
 
-      {page !== "login" && page !== "register" && (
+      {page !== "login" && page !== "register" && page !== "verify-account" && (
         <Menu onNavigate={onNavigate} />
       )}
 
-      {page === "events" && <Events />}
+      {page === "events" && <Events  onNavigate={onNavigate}/>}
       {page === "profile" && <Profile onNavigate={onNavigate} />}
-      {page === "alerts" && <Alerts />}
-      {page === "home" && <Home />}
-      {page === "socials" && <Feed />}
+      {page === "alerts" && <Alerts  onNavigate={onNavigate}/>}
+      {page === "home" && <Home  onNavigate={onNavigate}/>}
+      {page === "socials" && <Feed  onNavigate={onNavigate}/>}
       {page === "settings" && <Settings onNavigate={onNavigate} />}
+      {page === "alert-details" && <AlertDetails onNavigate={onNavigate} />}
+      {page === "event-details" && <EventDetails onNavigate={onNavigate} />}
     </div>
   );
 }

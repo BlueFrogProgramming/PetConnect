@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { confirmSignUp, resendSignUpCode } from 'aws-amplify/auth';
-import './Styles/VerifyAccountStyle.css';
 
 function VerifyAccount({ onNavigate }) {
   const [email, setEmail] = useState('');
@@ -34,6 +33,7 @@ function VerifyAccount({ onNavigate }) {
   const handleChange = (event) => {
     const { name, value } = event.target;
     if (name === 'email') setEmail(value);
+    console.log(email)
     if (name === 'verificationCode') setVerificationCode(value);
   };
 
